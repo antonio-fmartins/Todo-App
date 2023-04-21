@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,500;0,600;1,200;1,300;1,600&display=swap" rel="stylesheet">
+<!--icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Task List 3.0</title>
+</head>
+<body>
+  <section class="daytime_weather">
+    <div class="container_daytime">
+        <div class="time">
+          <p class="hour"></p>
+          <p class="colon">:</p>
+          <p class="minute"></p>
+        </div><!--time-->
+        <div class="day">
+          <p class="nameday"></p>
+          <span class="ndate"></span>
+          <span class="month"></span><span>,</span>
+          <span class="year"></span>
+        </div><!--day-->
+    </div><!--daytime-->
+    <div class="container_weather">
+      <div class="searchbar">
+          <input class="inputcity"type="text" placeholder="Search city">
+          <button class="btnsearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+      </div><!--searchbar-->
+      <div class="subcontainer_weather">
+          <div class="description_icon">
+              <p class="description"></p>
+              <img src="" alt="icon" id="icon" >
+          </div><!--description&icon-->
+          <div class="line"></div>
+          <div class="namecity_temp">
+            <p class="namecity"></p>
+            <div class="temp">
+              <span class="tempC"></span><span>°C</span>
+            </div>
+            <div class="temp_farenheit">
+              <span class="tempF"></span><span>°F</span>
+            </div>
+          </div><!--namecity&temp-->
+      </div><!--childcontainer_weather-->
+    </div><!--container_weather-->
+  </section><!--daytime&weather-->
+  <section class="maincontainer_lists">
+    <div class="container1_inputlist">
+      <div class="container2_inputlist">
+        <input type="text" class="inputlist" placeholder="Create your List">
+        <button class="btninputlist">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="btnconfirmednamelist hide">
+          <i class="fa-solid fa-check"></i>
+        </button>
+      </div><!--container2_inputlist-->
+    </div><!--container1_inputlist-->
+      <div class="container_alllists">
+        <!--
+        <div class="container_list">
+          <div class="box_namelist">
+              <p class="namelist">NameList</p>
+              <div class="btnnamelist">
+                  <button class="btneditnamelist">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                  </button>
+                  <button class="btndeletelist">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+              </div>
+          </div>
+          <div class="box_inputtask">
+            <input type="text" class="inputtask" placeholder="Insert your task">
+            <button class="btnaddtask">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="box_tasks">
+            <div class="box_task">
+              <p class="nametask">Task</p>
+              <button class="btncompleted">
+                <i class="fa-solid fa-check"></i>
+              </button>
+              <button class="btneditnametask">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <button class="btndeletetask">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      -->
+      </div><!--container_alllists-->
+  </section><!--maincontainer_list-->
+  
+  <script src="script.js"></script>
+</body>
+</html>

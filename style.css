@@ -1,0 +1,273 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Exo';
+}
+
+section.daytime_weather {
+  background-color: #181D31;
+  color:#F0E9D2;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:10px
+  }
+/*------------------------------time*/
+.container_daytime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:30px
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+}
+
+.day {
+  text-align: center;
+  font-size: 15px
+}
+
+.day >.nameday {
+  font-size: 35px;
+}
+/*-------------------------------weather*/
+.container_weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+  display:flex;
+  padding: 5px;
+  background:#67898380;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.inputcity {
+  background-color: #67898300;
+  color: #F0E9D2;
+  outline: none;
+  border: none;
+  padding:2px;
+}
+
+.subcontainer_weather {
+  display:flex;
+  justify-content: center;
+  min-width: 250px;
+  gap:70px
+}
+
+.description_icon {
+  display: flex;
+  font-size: 14px;
+}
+
+.line {
+  border:1px solid #F0E9D2;
+  height: 70px;
+}
+
+.temp {
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.839);
+}
+
+.tempC {font-size: 30px}
+
+.temp_farenheit {
+  display: flex;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.839);
+}
+
+.tempF {font-size: 12px;}
+
+/*-------------------------------container_inputlist*/
+.maincontainer_lists {
+  background-color: #181D31;
+}
+
+.container1_inputlist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px 100px 0px 0px;
+  background-color: white;
+  padding: 30px;
+}
+
+.container2_inputlist {
+  display: flex;
+  padding:10px;
+  border-radius: 10px;
+  background-color: #E6DDC4;
+  min-width: 250px;
+}
+
+.inputlist {
+  background-color: #E6DDC4;
+  outline: none;
+  border: none;
+  flex:1
+}
+
+/*-------------------------------container_alllists*/
+.container_alllists {
+  background-color: white;
+  padding:30px;  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_list {
+  background-color: #F0E9D2;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  margin: 20px 20px
+}
+
+.box_namelist {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.box_namelist p {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btnnamelist {
+  display: flex;
+  gap:10px;
+}
+
+.box_inputtask {
+  background-color:#E6DDC4;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.inputtask {
+  background-color: #E6DDC4;
+  color: #181D31;
+  border: none;
+  outline: none;
+  flex:1;
+}
+
+.box_tasks {
+  background-color: #F0E9D2;
+  border-radius: 10px;
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+  font-size: 15px;
+}
+
+.box_task {
+  display: flex;
+  padding:5px;
+  gap:10px
+}
+
+.box_task p {
+  flex:1;
+}
+
+
+/*---------------------all buttons*/
+.btnsearch {
+  background-color: #181d3100;
+  color:#F0E9D2;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btninputlist,
+.btnaddtask,
+.btnconfirmednamelist,
+.btnconfirmednametask {
+  background-color:#E6DDC4;
+  color:#181D31;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btneditnamelist,
+.btndeletelist,
+.btncompleted,
+.btneditnametask,
+.btndeletetask {
+  background-color:#F0E9D2;
+  color:#181D31;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btneditnamelist:hover { color: goldenrod; transform: scale(1.2);}
+.btndeletelist:hover {color:red; transform: scale(1.2);}
+.btndeletetask:hover{color: red; transform: scale(1.2);}
+.btneditnametask:hover{color:goldenrod; transform: scale(1.2);}
+.btncompleted:hover{color: green; transform: scale(1.2);}
+
+
+.hide{
+  display: none;
+}
+
+.fa-solid,
+.fa-regular{
+  pointer-events: none;
+}
+
+.completed {
+  opacity: 0.2;
+  text-decoration: line-through;
+}
+
+.changecolor,
+.btnconfirmednamelist,
+.btnconfirmednametask {
+  background-color: goldenrod;
+}
+
+.changecolorbtn {
+  color:goldenrod
+}
+
+
+/*------------------------------------mobile*/
+@media only screen and (max-width: 700px){
+  section.daytime_weather {
+    flex-direction: column;
+    gap:20px
+  }
+}
+
+
+
+
+
+
